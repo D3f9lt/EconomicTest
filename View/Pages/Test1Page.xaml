@@ -29,7 +29,7 @@
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
-            
+
             <TabItem Name="v2">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
@@ -110,6 +110,404 @@
                         <TextBox Name="TextBox3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
                         <Button Name="p5" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
                                 Click="p5_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v6">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">6</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Серийному производству свойственны:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 широкое использование универсального оборудования;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 организация рабочих мест по специализации;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 типизация технологических процессов и оснастки;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 1-3;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 1,3;" FontSize="15"/>
+                        <TextBox Name="TextBox4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p6" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p6_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v7">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">7</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Единичному производству свойственны:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 преимущественная численность рабочих высокой квалификации;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 использование универсального оборудования;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 непрерывная дистанционная диспетчеризация производства;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 1-3;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 1,2;" FontSize="15"/>
+                        <TextBox Name="TextBox5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p7" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p7_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v8">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">8</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Верно ли утверждение, что увеличение концентрации производства способствует:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 оптимальному сочетанию крупных, средних и мелких предприятий;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 развитию монополизма;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="З снижению дефицита продукции;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 улучшению использования производственных фондов;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 1-3;" FontSize="15"/>
+                        <TextBox Name="TextBox6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p8" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p8_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v9">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">9</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Государственное регулирование рынка. Правовые основы, регулирующие предпринимательской деятельности в РФ, устанавливаются:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 ﻿﻿Указами Президента РФ;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 ﻿﻿Постановлениями Правительства РФ;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="З Гражданским кодексом РФ и Федеральными законами;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 1-3;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 1-2;" FontSize="15"/>
+                        <TextBox Name="TextBox7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p9" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p9_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v10">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">10</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Какие организации признаются юридическими лицами?" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 организация, которая имеет в собственности обособленное имущество;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 организация, которая имеет имущество в хозяйственном ведении;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 организация, которая имеет обособленное имущество в оперативном" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 организация, которая имеет в собственности, хозяйственном ведении или оперативном управлении обособленное иму" FontSize="15"/>
+                        <TextBox Name="TextBox8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p10" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p10_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v11">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">11</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="С какого момента юридическое лицо приобретает гражданские права и принимает на себя гражданские обязанности?" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 с момента его государственной регистрации;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 с момента подписания учредительных документов." 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p11" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p11_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v12">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">12</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Какая форма предпринимательства наиболее приемлема для малых торговых предприятий?" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 индивидуальное предпринимательство." FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 акционерное общество." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="З унитарное предприятие." 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p12" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p12_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v13">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">13</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Процесс создания материальных и нематериальных благ, необходимых для существования и развития общества:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 производство." FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 сбыт." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 труд." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 средства производств." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 реализация продукции." 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p13" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p13_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v14">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">14</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Укажите основную цель функционирования предприятия в рыночных условиях:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 получение прибыли и ее максимизация" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 повышение заработной платы работников" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 выход на мировой рынок" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 максимальное удовлетворение общественных потребностей" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 совершенствование производственной структуры предприятия" 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p14" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p14_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v15">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">15</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Предприятия по формам собственности классифицируются на:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 индивидуальные" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 частные" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 малые" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 государственные" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 муниципальные" 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p15" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p15_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v16">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">16</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Предпринимательская деятельность - это ..." 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 мобильность, динамичность и необходимость действий в условиях неопределенности" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 система отношений между субъектами по поводу присвоения и отчуждения объектов" 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p16" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p16_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v17">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">17</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Имущественный комплекс, используемый для осуществления предпринимательской деятельности" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 кооператив." FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 концерн." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 предприятие." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 ассоциация." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 союз." 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p17" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p17_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v18">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">18</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Классификация фирм по форме собственности" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 государственные и частные." FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 муниципальные и частные." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 государственные и муниципальные." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 государственные и кооперативные." 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 частные и смешанные." 
+                                   FontSize="15"/>
+                        <TextBox Name="TextBox16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p18" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p18_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v19">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">19</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Маркетинговая деятельность на предприятии - это" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 деятельность предприятия по обновлению технологии изготовления товаров" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 деятельность предприятия по закупке сырья и материалов для производства товаров" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="З деятельность предприятия по заключению договоров с посредническими организациями по сбыту товаров" 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 деятельность предприятия на основе изучения законов рынка в целях реализации товаров и услуг и получения прибыли в условиях конкуренции" 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBox Name="TextBox17" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p19" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p19_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v20">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">20</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Что такое емкость рынка:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 максимальная территория, на которой возможен сбыт;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 максимально возможный объем сбыта на данном рынке;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="3 численность населения в границах максимальной территории, на которой возможен сбыт." 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBox Name="TextBox18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p20" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p20_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v21">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">21</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Главная цель коммерческих предприятий:" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="1 обеспечение условий расширенного воспроизводства;" FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="2 получение максимальной прибыли;" 
+                                   FontSize="15"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="З увеличение количества рабочих мест;" 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="4 социальное обеспечение;" 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="5 удовлетворение общественных потребностей" 
+                                   FontSize="15" TextWrapping="Wrap"/>
+                        <TextBox Name="TextBox19" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p21" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p21_Click"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem Name="v22">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="1">Результат</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Margin="15">
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Правильных ответов" 
+                                   FontSize="18" TextWrapping="Wrap"/>
+                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Ваша оценка" FontSize="15"/>
+                        <Button Name="p22" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p22_Click"/>
+                        <Button Name="p22" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
+                                Click="p22_Click"/>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
