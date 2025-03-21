@@ -501,13 +501,20 @@
                 </TabItem.Header>
                 <TabItem.Content>
                     <StackPanel Margin="15">
-                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Правильных ответов" 
-                                   FontSize="18" TextWrapping="Wrap"/>
-                        <TextBlock Margin="5" HorizontalAlignment="Left" Text="Ваша оценка" FontSize="15"/>
-                        <Button Name="p22" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
-                                Click="p22_Click"/>
-                        <Button Name="p22" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="75" Height="22" 
-                                Click="p22_Click"/>
+                        <!-- Строка с правильными ответами -->
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <TextBlock Text="Правильных ответов" FontSize="18" VerticalAlignment="Center"/>
+                            <TextBlock Name="CorrectAnswersCount" FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" 
+                                       FontWeight="Bold"/>
+                        </StackPanel>
+                        <!-- Строка с оценкой -->
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <TextBlock Text="Ваша оценка" FontSize="15" VerticalAlignment="Center"/>
+                            <TextBlock Name="GradeValue" FontSize="15" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Bold"/>
+                        </StackPanel>
+                        <!-- Кнопки -->
+                        <Button Name="p22" Content="Показать результат" HorizontalAlignment="Left" Margin="5" Width="150" Height="22"/>
+                        <Button Name="p23" Content="OK" HorizontalAlignment="Left" Margin="5" Width="75" Height="22"/>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
