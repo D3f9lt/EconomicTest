@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище IvanushkinEconomicTestModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище IvanushkinEconomicTestModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Group">
           <Key>
             <PropertyRef Name="ID" />
@@ -17,7 +17,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="DateTest" Type="date" Nullable="false" />
+          <Property Name="DateTest" Type="datetime" Nullable="false" />
           <Property Name="IdStudent" Type="int" Nullable="false" />
           <Property Name="IdTest" Type="int" Nullable="false" />
           <Property Name="Mark" Type="int" Nullable="false" />
@@ -102,46 +102,64 @@
             <End Role="Student" EntitySet="Student" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="IvanushkinEconomicTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="EconomicTestEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Group" EntityType="IvanushkinEconomicTestModel.Group" />
+          <EntitySet Name="Journal" EntityType="IvanushkinEconomicTestModel.Journal" />
+          <EntitySet Name="Student" EntityType="IvanushkinEconomicTestModel.Student" />
+          <EntitySet Name="sysdiagrams" EntityType="IvanushkinEconomicTestModel.sysdiagrams" />
+          <EntitySet Name="Test" EntityType="IvanushkinEconomicTestModel.Test" />
+          <AssociationSet Name="FK_Student_Group" Association="IvanushkinEconomicTestModel.FK_Student_Group">
+            <End Role="Group" EntitySet="Group" />
+            <End Role="Student" EntitySet="Student" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Journal_Student" Association="IvanushkinEconomicTestModel.FK_Journal_Student">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="Journal" EntitySet="Journal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Journal_Test" Association="IvanushkinEconomicTestModel.FK_Journal_Test">
+            <End Role="Test" EntitySet="Test" />
+            <End Role="Journal" EntitySet="Journal" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="Group">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Student" Relationship="Self.FK_Student_Group" FromRole="Group" ToRole="Student" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Student" Relationship="IvanushkinEconomicTestModel.FK_Student_Group" FromRole="Group" ToRole="Student" />
         </EntityType>
         <EntityType Name="Journal">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="DateTest" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DateTest" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IdStudent" Type="Int32" Nullable="false" />
           <Property Name="IdTest" Type="Int32" Nullable="false" />
           <Property Name="Mark" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Student" Relationship="Self.FK_Journal_Student" FromRole="Journal" ToRole="Student" />
-          <NavigationProperty Name="Test" Relationship="Self.FK_Journal_Test" FromRole="Journal" ToRole="Test" />
+          <NavigationProperty Name="Student" Relationship="IvanushkinEconomicTestModel.FK_Journal_Student" FromRole="Journal" ToRole="Student" />
+          <NavigationProperty Name="Test" Relationship="IvanushkinEconomicTestModel.FK_Journal_Test" FromRole="Journal" ToRole="Test" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="IdGroup" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Group" Relationship="Self.FK_Student_Group" FromRole="Student" ToRole="Group" />
-          <NavigationProperty Name="Journal" Relationship="Self.FK_Journal_Student" FromRole="Student" ToRole="Journal" />
+          <NavigationProperty Name="Group" Relationship="IvanushkinEconomicTestModel.FK_Student_Group" FromRole="Student" ToRole="Group" />
+          <NavigationProperty Name="Journal" Relationship="IvanushkinEconomicTestModel.FK_Journal_Student" FromRole="Student" ToRole="Journal" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
           </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="principal_id" Type="Int32" Nullable="false" />
           <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="version" Type="Int32" />
@@ -152,12 +170,12 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Journal" Relationship="Self.FK_Journal_Test" FromRole="Test" ToRole="Journal" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Journal" Relationship="IvanushkinEconomicTestModel.FK_Journal_Test" FromRole="Test" ToRole="Journal" />
         </EntityType>
         <Association Name="FK_Student_Group">
-          <End Role="Group" Type="Self.Group" Multiplicity="1" />
-          <End Role="Student" Type="Self.Student" Multiplicity="*" />
+          <End Type="IvanushkinEconomicTestModel.Group" Role="Group" Multiplicity="1" />
+          <End Type="IvanushkinEconomicTestModel.Student" Role="Student" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Group">
               <PropertyRef Name="ID" />
@@ -168,8 +186,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Journal_Student">
-          <End Role="Student" Type="Self.Student" Multiplicity="1" />
-          <End Role="Journal" Type="Self.Journal" Multiplicity="*" />
+          <End Type="IvanushkinEconomicTestModel.Student" Role="Student" Multiplicity="1" />
+          <End Type="IvanushkinEconomicTestModel.Journal" Role="Journal" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Student">
               <PropertyRef Name="ID" />
@@ -180,8 +198,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Journal_Test">
-          <End Role="Test" Type="Self.Test" Multiplicity="1" />
-          <End Role="Journal" Type="Self.Journal" Multiplicity="*" />
+          <End Type="IvanushkinEconomicTestModel.Test" Role="Test" Multiplicity="1" />
+          <End Type="IvanushkinEconomicTestModel.Journal" Role="Journal" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Test">
               <PropertyRef Name="ID" />
@@ -191,25 +209,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="EconomicTestEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Group" EntityType="Self.Group" />
-          <EntitySet Name="Journal" EntityType="Self.Journal" />
-          <EntitySet Name="Student" EntityType="Self.Student" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
-          <EntitySet Name="Test" EntityType="Self.Test" />
-          <AssociationSet Name="FK_Student_Group" Association="Self.FK_Student_Group">
-            <End Role="Group" EntitySet="Group" />
-            <End Role="Student" EntitySet="Student" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Journal_Student" Association="Self.FK_Journal_Student">
-            <End Role="Student" EntitySet="Student" />
-            <End Role="Journal" EntitySet="Journal" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Journal_Test" Association="Self.FK_Journal_Test">
-            <End Role="Test" EntitySet="Test" />
-            <End Role="Journal" EntitySet="Journal" />
-          </AssociationSet>
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -219,47 +218,47 @@
           <EntitySetMapping Name="Group">
             <EntityTypeMapping TypeName="IvanushkinEconomicTestModel.Group">
               <MappingFragment StoreEntitySet="Group">
-                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Journal">
             <EntityTypeMapping TypeName="IvanushkinEconomicTestModel.Journal">
               <MappingFragment StoreEntitySet="Journal">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="DateTest" ColumnName="DateTest" />
-                <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
-                <ScalarProperty Name="IdTest" ColumnName="IdTest" />
                 <ScalarProperty Name="Mark" ColumnName="Mark" />
+                <ScalarProperty Name="IdTest" ColumnName="IdTest" />
+                <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+                <ScalarProperty Name="DateTest" ColumnName="DateTest" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Student">
             <EntityTypeMapping TypeName="IvanushkinEconomicTestModel.Student">
               <MappingFragment StoreEntitySet="Student">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="IvanushkinEconomicTestModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Test">
             <EntityTypeMapping TypeName="IvanushkinEconomicTestModel.Test">
               <MappingFragment StoreEntitySet="Test">
-                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

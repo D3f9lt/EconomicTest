@@ -59,15 +59,15 @@ namespace EconomicTest.View.Pages
                 mes = "";
                 return;
             }
-            //else if (TestCmb.Text == "Общие основые функционирования субъектов хозяйствования")
-            //{
-            //    ClassFrame.mainFrame.Navigate(new Test1Page());
-            //}
+            else if (TestCmb.Text == "Общие основы функионирования субъектов хозяйствования")
+            {
+                ClassFrame.mainFrame.Navigate(new Test1Page());
+            }
             //else if (TestCmb.Text == "Сущность и структура основного капитала и оборотных средств предприятия")
             //{
             //    FrameHelper.mainFrame.Navigate(new View.Pages.Test2Page());
             //}
-            //else if (TestCmb.Text == "Формы и системы оплаты труда")
+            //else if (TestCmb.Text == "Формы и системы труда")
             //{
             //    FrameHelper.mainFrame.Navigate(new View.Pages.Test3Page());
             //}
@@ -75,6 +75,8 @@ namespace EconomicTest.View.Pages
             //{
             //    FrameHelper.mainFrame.Navigate(new View.Pages.Test4Page());
             //}
+
+            ClassVariable.classman = Convert.ToInt32(StudentCmb.SelectedValue);
         }
     }
 }

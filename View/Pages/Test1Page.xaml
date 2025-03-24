@@ -500,21 +500,22 @@
                     </StackPanel>
                 </TabItem.Header>
                 <TabItem.Content>
-                    <StackPanel Margin="15">
+                    <StackPanel Margin="10">
                         <!-- Строка с правильными ответами -->
-                        <StackPanel Orientation="Horizontal" Margin="5">
-                            <TextBlock Text="Правильных ответов" FontSize="18" VerticalAlignment="Center"/>
-                            <TextBlock Name="CorrectAnswersCount" FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" 
-                                       FontWeight="Bold"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Правильных ответов" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Name="CorrectAnswersCount" FontSize="20" VerticalAlignment="Center" Margin="10" HorizontalAlignment="Left"
+                                       FontWeight="Bold" Visibility="Visible" Width="100"/>
                         </StackPanel>
                         <!-- Строка с оценкой -->
-                        <StackPanel Orientation="Horizontal" Margin="5">
-                            <TextBlock Text="Ваша оценка" FontSize="15" VerticalAlignment="Center"/>
-                            <TextBlock Name="GradeValue" FontSize="15" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Bold"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ваша оценка" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            <TextBlock Name="GradeValue" FontSize="20" VerticalAlignment="Center" FontWeight="Bold" Margin="10"
+                                       Visibility="Visible" Width="100" HorizontalAlignment="Left"/>
                         </StackPanel>
                         <!-- Кнопки -->
-                        <Button Name="p22" Content="Показать результат" HorizontalAlignment="Left" Margin="5" Width="150" Height="22"/>
-                        <Button Name="p23" Content="OK" HorizontalAlignment="Left" Margin="5" Width="75" Height="22"/>
+                        <Button Name="p22" Content="Показать результат" HorizontalAlignment="Left" Margin="5" Width="150" Height="22" Click="p22_Click"/>
+                        <Button Name="p23" Content="OK" HorizontalAlignment="Left" Margin="5" Width="75" Height="22" Click="p23_Click"/>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>

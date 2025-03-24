@@ -226,7 +226,7 @@ namespace EconomicTest.View.Pages
 
         private void p14_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox10.Text == "2")
+            if (TextBox11.Text == "2")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -241,7 +241,7 @@ namespace EconomicTest.View.Pages
 
         private void p15_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox11.Text == "1")
+            if (TextBox12.Text == "1")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -256,7 +256,7 @@ namespace EconomicTest.View.Pages
 
         private void p16_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox12.Text == "4")
+            if (TextBox13.Text == "4")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -271,7 +271,7 @@ namespace EconomicTest.View.Pages
 
         private void p17_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox13.Text == "3")
+            if (TextBox14.Text == "3")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -286,7 +286,7 @@ namespace EconomicTest.View.Pages
 
         private void p18_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox14.Text == "1")
+            if (TextBox15.Text == "1")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -301,7 +301,7 @@ namespace EconomicTest.View.Pages
 
         private void p19_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox15.Text == "1")
+            if (TextBox16.Text == "1")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -316,7 +316,7 @@ namespace EconomicTest.View.Pages
 
         private void p20_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox16.Text == "3")
+            if (TextBox17.Text == "3")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -331,7 +331,7 @@ namespace EconomicTest.View.Pages
 
         private void p21_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox17.Text == "4")
+            if (TextBox18.Text == "4")
             {
                 MessageBox.Show("Правильно");
                 b = b + 1;
@@ -346,15 +346,15 @@ namespace EconomicTest.View.Pages
 
         private void p22_Click(object sender, RoutedEventArgs e)
         {
-            CorrectAnswersCount.Text = b.ToString();
-            GradeValue.Text = (b).ToString();
+            CorrectAnswersCount.Text = Convert.ToString(b);
 
-        }
+            if (b >= 20) grade = 5;
+            if (b > 11 && b < 20) grade = 4;
+            if (b > 5 && b < 12) grade = 3;
+            if (b < 6 && b > 0) grade = 2;
+            if (b == 0) grade = 1;
 
-        private void CalculatGrade()
-        {
-            int totalQuestions = 21;
-            grade = (int)Math.Round((double) b / totalQuestions * 5);
+            GradeValue.Text = Convert.ToString(grade);
         }
 
         private void p23_Click(object sender, RoutedEventArgs e)
@@ -369,7 +369,6 @@ namespace EconomicTest.View.Pages
 
             App.context.Journal.Add(journal);
             App.context.SaveChanges();
-
             ClassFrame.mainFrame.Navigate(new MainMenuPage());
         }
     }

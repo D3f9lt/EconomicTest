@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EconomicTest.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace EconomicTest.AppData
 {
     internal class ClassVariable
     {
-        public static int classman;
+       public static int classman;
     }
 }

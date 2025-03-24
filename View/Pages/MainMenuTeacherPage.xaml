@@ -14,7 +14,7 @@
             <Button Name="AddGroup" Content="Добавить группу" Width="250" Height="40" Margin="10" Click="AddGroup_Click"/>
             <Button Name="ListStudent" Content="Список студентов" Width="250" Height="40" Margin="10" Click="ListStudent_Click"/>
             <Button Name="DeleteStudent" Content="Удалить  студента" Width="250" Height="40" Margin="10" Click="DeleteStudent_Click"/>
-            <Button Name="Out" Content="Выйти с гланого меню" Width="250" Height="40" Margin="10" Click="Out_Click"/>
+            <Button Name="Out" Content="Выйти в гланого меню" Width="250" Height="40" Margin="10" Click="Out_Click"/>
         </StackPanel>
     </Grid>
 </Page>

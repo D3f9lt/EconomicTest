@@ -48,7 +48,7 @@ namespace EconomicTest.View.Pages
 
         private void Out_Click(object sender, RoutedEventArgs e)
         {
-            ClassFrame.mainFrame.Navigate(new MainMenuTeacherPage());
+            ClassFrame.mainFrame.Navigate(new MainMenuPage());
         }
     }
 }
