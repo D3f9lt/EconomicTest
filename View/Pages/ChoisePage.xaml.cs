@@ -59,22 +59,22 @@ namespace EconomicTest.View.Pages
                 mes = "";
                 return;
             }
-            else if (TestCmb.Text == "Общие основые функционирования субъектов хозяйствования")
-            {
-                ClassFrame.mainFrame.Navigate(new Test1Page());
-            }
-            else if (TestCmb.Text == "Сущность и структура основного капитала и оборотных средств предприятия")
-            {
-                //FrameHelper.mainFrame.Navigate(new View.Pages.Test2Page());
-            }
-            else if (TestCmb.Text == "Формы и системы оплаты труда")
-            {
-                //FrameHelper.mainFrame.Navigate(new View.Pages.Test3Page());
-            }
-            else if (TestCmb.Text == "Результаты коммерческой деятельности")
-            {
-                //FrameHelper.mainFrame.Navigate(new View.Pages.Test4Page());
-            }
+            //else if (TestCmb.Text == "Общие основые функционирования субъектов хозяйствования")
+            //{
+            //    ClassFrame.mainFrame.Navigate(new Test1Page());
+            //}
+            //else if (TestCmb.Text == "Сущность и структура основного капитала и оборотных средств предприятия")
+            //{
+            //    FrameHelper.mainFrame.Navigate(new View.Pages.Test2Page());
+            //}
+            //else if (TestCmb.Text == "Формы и системы оплаты труда")
+            //{
+            //    FrameHelper.mainFrame.Navigate(new View.Pages.Test3Page());
+            //}
+            //else if (TestCmb.Text == "Результаты коммерческой деятельности")
+            //{
+            //    FrameHelper.mainFrame.Navigate(new View.Pages.Test4Page());
+            //}
         }
     }
 }

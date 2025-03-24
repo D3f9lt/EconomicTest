@@ -1,4 +1,5 @@
-﻿using EconomicTest.Model;
+﻿using EconomicTest.AppData;
+using EconomicTest.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace EconomicTest.View.Pages
     public partial class Test1Page : Page
     {
         int b = 0;
-        int c = 0;
+        private int grade = 0;
         public Test1Page()
         {
             InitializeComponent();
@@ -346,14 +347,14 @@ namespace EconomicTest.View.Pages
         private void p22_Click(object sender, RoutedEventArgs e)
         {
             CorrectAnswersCount.Text = b.ToString();
-            GradeValue.Text = CalculatGrade(b).ToString();
+            GradeValue.Text = (b).ToString();
 
         }
 
         private void CalculatGrade()
         {
             int totalQuestions = 21;
-            c = (int)Math.Round((double) / totalQuestions * 5);
+            grade = (int)Math.Round((double) b / totalQuestions * 5);
         }
 
         private void p23_Click(object sender, RoutedEventArgs e)
@@ -361,8 +362,15 @@ namespace EconomicTest.View.Pages
             Journal journal = new Journal()
             {
                 DateTest = DateTime.Now,
-                Mark = 
-            }
+                Mark = grade,
+                IdStudent = ClassVariable.classman,
+                IdTest = 1
+            };
+
+            App.context.Journal.Add(journal);
+            App.context.SaveChanges();
+
+            ClassFrame.mainFrame.Navigate(new MainMenuPage());
         }
     }
 }

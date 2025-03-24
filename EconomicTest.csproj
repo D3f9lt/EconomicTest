@@ -108,6 +108,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AppData\ClassFrame.cs" />
+    <Compile Include="AppData\ClassVariable.cs" />
     <Compile Include="Model\Group.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
